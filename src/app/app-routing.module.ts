@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
-const routes: Routes = [];
+import { UdetalleComponent } from './udetalle/udetalle.component';
+import { UlistaComponent } from './ulista/ulista.component';
+const routes: Routes = [
+  {path : '', component: UlistaComponent},
+  {path : 'detalle/:username', component: UdetalleComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
